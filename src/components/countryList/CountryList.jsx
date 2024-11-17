@@ -62,7 +62,7 @@ const CountryList = ({country}) => {
 
   // Renderizado normal de la lista de países
   return (
-    <div className={`h-full grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 px-2`}>
+    <div className={`mx-1 w-[99%] grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 px-2`}>
       {
         currentCountries?.map((country) => (
           <Card

@@ -58,7 +58,7 @@ const Search = () => {
   }
   
   return (
-    <div>
+    <div className="mx-1">
       <form onSubmit={handleSubmit} className="flex flex-col gap-2">
         <div className="flex gap-2">
           <input
@@ -72,7 +72,7 @@ const Search = () => {
           />
           <button 
             type="submit"
-            className="font-bold px-1.5 py-1 border-transparent rounded bg-gradient-to-b from-[#f5b7b1] to-[#cb4335] cursor-pointer text-[#201d1d] hover:text-white hover:bg-gradient-to-b hover:from-[#cb4335] hover:to-[#f5b7b1] duration-1000 active:scale-75 transition-transform disabled:opacity-50 disabled:cursor-not-allowed"
+            className="font-semibold px-1 py-1 border-transparent rounded bg-gradient-to-b from-[#f5b7b1] to-[#cb4335] cursor-pointer text-[#201d1d] hover:text-white hover:bg-gradient-to-b hover:from-[#cb4335] hover:to-[#f5b7b1] duration-1000 active:scale-75 transition-transform disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={loading}
           >
             {loading ? 'Searching...' : 'Search'}

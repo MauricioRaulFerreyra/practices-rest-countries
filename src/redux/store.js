@@ -9,7 +9,16 @@ const store = configureStore({
     countries: countriesReducer,
     activities: activitiesReducer,
     pagination: paginationReducer
-  }
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        // Aumentar el threshold
+        warnAfter: 1000,
+        // O deshabilitarlo completamente
+        // ignoredActions: ['YOUR_ACTION_TYPE']
+      },
+    }),
 });
 
 export default store;
