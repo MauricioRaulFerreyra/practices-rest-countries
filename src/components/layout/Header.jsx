@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className="flex flex-col bg-white dark:bg-gray-700">
-      <div className="container mx-auto p-2 flex justify-between items-center">
+      <div className="container mx-auto p-2 flex items-center justify-between">
         <Back />
         <Reload />
         <Search/>

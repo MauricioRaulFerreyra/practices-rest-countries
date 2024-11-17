@@ -58,7 +58,7 @@ const Search = () => {
   }
   
   return (
-    <div className="mx-1 w-[95%] sm:w-full">
+    <div className="mx-1 w-auto">
       <form onSubmit={handleSubmit} className="flex flex-col gap-2">
         <div className="flex gap-2">
           <input
